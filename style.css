@@ -1,13 +1,10 @@
-html
+body
 {
     background-image: url("images/bg-pattern-top-desktop.svg"),url("images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position:left top, right bottom;
     background-size: auto;
     font-family: 'Spartan', sans-serif;
-}
-body
-{
     width: 80%;
     margin: auto;
 }
@@ -136,4 +133,25 @@ body
 .lower-right-div
 {
     margin-top: 40px;
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    body
+    {
+        background-image: url("images/bg-pattern-top-mobile.svg"),url("images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-position:left top, right bottom;
+        background-size: auto;
+        font-family: 'Spartan', sans-serif;
+        width: 90%;
+        margin: auto;
+    }
+    .upper-div
+    {
+        
+    }
+
+
 }
