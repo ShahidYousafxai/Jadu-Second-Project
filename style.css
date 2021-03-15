@@ -1,10 +1,13 @@
-body
+html
 {
     background-image: url("images/bg-pattern-top-desktop.svg"),url("images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position:left top, right bottom;
     background-size: auto;
     font-family: 'Spartan', sans-serif;
+}
+body
+{
     width: 80%;
     margin: auto;
 }
@@ -35,7 +38,8 @@ body
 
 .upper-left-div
 {
-    margin-left: 10px;
+    width: 35%;
+    margin: auto;
 }
 .upper-left-div-p1
 {
@@ -136,22 +140,129 @@ body
 }
 
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 375px) 
 {
-    body
-    {
-        background-image: url("images/bg-pattern-top-mobile.svg"),url("images/bg-pattern-bottom-mobile.svg");
-        background-repeat: no-repeat;
-        background-position:left top, right bottom;
-        background-size: auto;
-        font-family: 'Spartan', sans-serif;
-        width: 90%;
-        margin: auto;
-    }
-    .upper-div
-    {
-        
-    }
+html
+{
+    background-image: url("images/bg-pattern-top-mobile.svg"),url("images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position:left top, right bottom;
+    background-size: auto;
+    font-family: "Spartan sans-serif";    
+}
+body
+{
+    width: 90%;
+    margin: auto;
+}
+.upper-div
+{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.upper-right-div
+{
+    width: 90%;
+    margin: 20px auto;
+}
+.upper-left-div
+{
+    width: 90%;
+    margin: auto;
+}
+.upper-left-div-p1
+{
+    color: hsl(300, 43%, 22%);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+.upper-left-div-p2
+{
+    color: hsl(303, 10%, 53%);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.div-ul
+{
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(300, 24%, 96%);
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 7px;
+    height: 70px;
+}
+
+.rate-p
+{
+    color: hsl(300, 43%, 22%);
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px;
+}
+.right-ul
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    
+}
+.right-ul li
+{
+    padding: 3px;
+}
+.lower-div
+{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+}
+.div-profile
+{
+    background-color: hsl(300, 43%, 22%);
+    align-content: center;
+    width: 90%;
+    height: 200px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.div-flex
+{
+    display: flex;
+    align-items: center;
+}
+.lower-div img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.div-name
+{
+    font-size: 12px;
+    color: hsl(300, 24%, 96%);
+    font-weight: 700;
+}
+.div-buy
+{
+    font-size: 12px;
+    color: hsl(333, 80%, 67%);
+}
+.div-flex p
+{
+    line-height: 6px;
+    margin-left: 20px;
+}
+.div-text
+{
+    color: hsl(300, 24%, 96%);
+    line-height: 25px;
+}
 
 
 }
